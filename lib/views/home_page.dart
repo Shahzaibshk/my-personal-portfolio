@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
         FadeInRight(
           duration: const Duration(milliseconds: 1400),
           child: Text(
-            'Shahzaib Ali',
+            'Shahzaib Ali Shk',
             style: AppTextStyles.headingStyles(),
           ),
         ),
@@ -146,7 +146,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         Constants.sizedBox(height: 22.0),
-        
+
         // Social buttons
         FadeInUp(
           duration: const Duration(milliseconds: 1600),
