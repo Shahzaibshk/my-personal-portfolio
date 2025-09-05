@@ -33,33 +33,47 @@ class _HomePageState extends State<HomePage> {
     'https://github.com/Shahzaibshk'
   ];
 
-  var socialBI;
+  int? socialBI;
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
     return HelperClass(
       mobile: Column(
         children: [
           buildHomePersonalInfo(size),
           Constants.sizedBox(height: 25.0),
-          const ProfileAnimation()
+          const ProfileAnimation(),
         ],
       ),
       tablet: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Expanded(child: buildHomePersonalInfo(size)),
-          const ProfileAnimation(),
+          Flexible(flex: 1, child: buildHomePersonalInfo(size)),
+          const SizedBox(width: 24),
+          Flexible(
+            flex: 1,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 500),
+              child: const ProfileAnimation(),
+            ),
+          ),
         ],
       ),
       desktop: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Expanded(child: buildHomePersonalInfo(size)),
-          const ProfileAnimation(),
+          Flexible(flex: 1, child: buildHomePersonalInfo(size)),
+          const SizedBox(width: 24),
+          Flexible(
+            flex: 1,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 520),
+              child: const ProfileAnimation(),
+            ),
+          ),
         ],
       ),
       paddingWidth: size.width * 0.1,
@@ -90,30 +104,30 @@ class _HomePageState extends State<HomePage> {
         Constants.sizedBox(height: 15.0),
         FadeInLeft(
           duration: const Duration(milliseconds: 1400),
-          child: Row(
+          child: Wrap(
+            crossAxisAlignment: WrapCrossAlignment.center,
+            spacing: 6,
             children: [
               Text(
                 'I\'m a ',
                 style: AppTextStyles.montserratStyle(color: Colors.white),
               ),
-              AnimatedTextKit(
-                animatedTexts: [
-                  TyperAnimatedText(
-                    'Flutter Developer',
-                    textStyle:
-                        AppTextStyles.montserratStyle(color: Colors.lightBlue),
-                  ),
-                  // TyperAnimatedText('Freelancer',
-                  //     textStyle: AppTextStyles.montserratStyle(
-                  //         color: Colors.lightBlue)),
-                  // TyperAnimatedText('YouTuber',
-                  //     textStyle: AppTextStyles.montserratStyle(
-                  //         color: Colors.lightBlue))
-                ],
-                pause: const Duration(milliseconds: 1000),
-                displayFullTextOnTap: true,
-                stopPauseOnTap: true,
-              )
+              SizedBox(
+                // cap width so animated text wraps nicely on small widths
+                width: 260,
+                child: AnimatedTextKit(
+                  animatedTexts: [
+                    TyperAnimatedText(
+                      'Flutter Developer',
+                      textStyle: AppTextStyles.montserratStyle(
+                          color: Colors.lightBlue),
+                    ),
+                  ],
+                  displayFullTextOnTap: true,
+                  stopPauseOnTap: true,
+                  isRepeatingAnimation: true,
+                ),
+              ),
             ],
           ),
         ),
@@ -122,7 +136,8 @@ class _HomePageState extends State<HomePage> {
           padding: const EdgeInsets.only(right: 20),
           child: FadeInDown(
             duration: const Duration(milliseconds: 1600),
-            child: Expanded(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 700),
               child: Text(
                 'Specializing in cross-platform apps with Firebase integration, Riverpod state management, and custom UI/UX design, I build smooth, scalable, and user-focused mobile solutions.',
                 style: AppTextStyles.normalStyle(),
@@ -131,6 +146,8 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         Constants.sizedBox(height: 22.0),
+        
+        // Social buttons
         FadeInUp(
           duration: const Duration(milliseconds: 1600),
           child: SizedBox(
@@ -138,54 +155,49 @@ class _HomePageState extends State<HomePage> {
             child: ListView.separated(
               itemCount: socialButtons.length,
               shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
               scrollDirection: Axis.horizontal,
-              separatorBuilder: (context, child) =>
-                  Constants.sizedBox(width: 8.0),
+              separatorBuilder: (context, _) => Constants.sizedBox(width: 8.0),
               itemBuilder: (context, index) {
                 return InkWell(
                   onTap: () async {
                     js.context.callMethod('open', [socialUrls[index]]);
                   },
                   onHover: (value) {
-                    setState(() {
-                      if (value) {
-                        socialBI = index;
-                      } else {
-                        socialBI = null;
-                      }
-                    });
+                    setState(() => socialBI = value ? index : null);
                   },
                   borderRadius: BorderRadius.circular(550.0),
                   hoverColor: AppColors.themeColor,
                   splashColor: AppColors.lawGreen,
                   child: buildSocialButton(
-                      asset: socialButtons[index],
-                      hover: socialBI == index ? true : false),
+                    asset: socialButtons[index],
+                    hover: socialBI == index,
+                  ),
                 );
               },
             ),
           ),
         ),
         Constants.sizedBox(height: 18.0),
+
+        // Download CV
         FadeInUp(
           duration: const Duration(milliseconds: 1800),
           child: AppButtons.buildMaterialButton(
-              onTap: () async {
-                // final url = Uri.parse('https://your-cv-link.com/yourcv.pdf');
-                // await launchUrl(url, mode: LaunchMode.platformDefault);
-                const assetPath = 'assets/cv/Shahzaib_Ali_CV.pdf';
-                const fileName = 'Shahzaib_Ali_CV.pdf';
-                if (kIsWeb) {
-                  final a = html.AnchorElement(href: assetPath)
-                    ..download = fileName;
-                  a.click();
-                } else {
-                  // Fallback for mobile/desktop builds: open in browser
-                  await launchUrl(Uri.parse(assetPath),
-                      mode: LaunchMode.externalApplication);
-                }
-              },
-              buttonName: 'Download CV'),
+            onTap: () async {
+              const assetPath = 'assets/cv/Shahzaib_Ali_CV.pdf';
+              const fileName = 'Shahzaib_Ali_CV.pdf';
+              if (kIsWeb) {
+                final a = html.AnchorElement(href: assetPath)
+                  ..download = fileName;
+                a.click();
+              } else {
+                await launchUrl(Uri.parse(assetPath),
+                    mode: LaunchMode.externalApplication);
+              }
+            },
+            buttonName: 'Download CV',
+          ),
         ),
       ],
     );
@@ -206,7 +218,6 @@ class _HomePageState extends State<HomePage> {
         width: 10,
         height: 12,
         color: hover ? AppColors.bgColor : AppColors.themeColor,
-        // fit: BoxFit.fill,
       ),
     );
   }
