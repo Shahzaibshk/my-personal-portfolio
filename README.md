@@ -1,8 +1,9 @@
-# my_portfolio
+# Shahzaib's Portfolio
 
-A new Flutter project.
+A Portfolio project.
 
 ## Getting Started
+
 
 This project is a starting point for a Flutter application.
 

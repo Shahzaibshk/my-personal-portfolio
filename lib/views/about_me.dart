@@ -91,11 +91,6 @@ class AboutMe extends StatelessWidget {
           ),
         ),
         Constants.sizedBox(height: 15.0),
-        // FadeInUp(
-        //   duration: const Duration(milliseconds: 1800),
-        //   child: AppButtons.buildMaterialButton(
-        //       onTap: () {}, buttonName: 'Read More'),
-        // )
       ],
     );
   }

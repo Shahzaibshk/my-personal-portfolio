@@ -17,7 +17,14 @@ class FooterClass extends StatelessWidget {
         horizontal: 40,
       ),
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          // Scroll to top of screen on click of button
+          Scrollable.ensureVisible(
+            context,
+            duration: const Duration(seconds: 1),
+            curve: Curves.fastLinearToSlowEaseIn,
+          );
+        },
         child: Container(
           height: 40,
           width: 40,
