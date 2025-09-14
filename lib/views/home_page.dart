@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
         FadeInRight(
           duration: const Duration(milliseconds: 1400),
           child: Text(
-            'Shahzaib Ali Shk',
+            'Shahzaib Ali',
             style: AppTextStyles.headingStyles(),
           ),
         ),

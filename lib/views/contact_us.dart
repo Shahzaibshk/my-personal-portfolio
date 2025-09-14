@@ -220,13 +220,12 @@ class ContactUs extends StatelessWidget {
         Constants.sizedBox(height: 40.0),
         AppButtons.buildMaterialButton(
           buttonName: 'Send Message',
-// In your onTap:
           onTap: () {
             final subject = subjectController.text.trim().isEmpty
                 ? 'New Contact Form Submission'
                 : subjectController.text.trim();
 
-            final body = messageController.text; // or build a full message
+            final body = messageController.text;
 
             final url = _mailtoUrl(
               to: 'ishahzaibali1472@gmail.com',
