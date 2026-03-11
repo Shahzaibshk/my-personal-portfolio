@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="description" content="David Legend Portfolio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- replace deprecated apple tag -->
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <title>Shahzaib Ali Portfolio</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icons/logo-aerium-2.png" />
+  <link rel="apple-touch-icon" href="icons/logo-aerium-2.png" />
+
+  <script>
+    // keep your helper if you need it
+    function openLink(url, target, isAsync = false) {
+      const is_safari = /^(?!.*chrome).*safari/i.test(
+        navigator.userAgent.toLowerCase()
+      );
+      if (is_safari && isAsync) window.location.href = url;
+      else window.open(url, target);
+    }
+  </script>
+</head>
+
+<body id="app-container">
+  <!-- New Flutter bootstrap. Do NOT include flutter.js or any _flutter.loader calls -->
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+
+</html>
