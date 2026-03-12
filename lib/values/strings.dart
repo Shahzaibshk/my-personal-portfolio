@@ -263,54 +263,6 @@ class StringConst {
   static const String DURATION_5 = "May 2020 - Sept 2022";
 
   //Portfolio, Projects
-  static const String PORTFOLIO_SITE_V2 = "Aerium V2";
-  static const String PORTFOLIO_SITE_V2_PLATFORM = "Web";
-  static const String PORTFOLIO_SITE_V2_CATEGORY = "Portfolio / CV.";
-  static const String PORTFOLIO_SITE_V2_DESIGNER = "Julius Guevarra.";
-  static const String PORTFOLIO_SITE_V2_SUBTITLE =
-      "A beautiful portfolio website built with flutter web.";
-  static const String PORTFOLIO_SITE_V2_DETAIL =
-      "As you can tell, you're currently on my portfolio website (Aerium-v2) right now. Aerium-v2 is an elegant progressive web app built to help developers tell their story by showcasing their works and skills.";
-  static const String PORTFOLIO_SITE_V2_GITHUB_URL =
-      "https://github.com/david-legend/david-legend.github.io";
-  static const String PORTFOLIO_SITE_V2_WEB_URL = "https://davidcobbina.com/";
-
-  static const String DROP = "Drop";
-  static const String DROP_PLATFORM = "Android / IOS.";
-  static const String DROP_CATEGORY = "Ecommerce.";
-  static const String DROP_DESIGNER = "Stepan Slobodiansky.";
-  static const String DROP_SUBTITLE =
-      "A beautiful ecommerce mobile application.";
-  static const String DROP_DETAIL =
-      "Drop is an online store which provides users with a simple, smooth experience and enabling users to get their hands on the latest and newest drops.";
-  static const String DROP_GITHUB_URL = "https://github.com/david-legend/drop";
-  static const String DROP_PLAYSTORE_URL =
-      "https://play.google.com/store/apps/details?id=com.davidcobbina.drop";
-
-  static const String NIMBUS = "Nimbus";
-  static const String NIMBUS_PLATFORM = "Web.";
-  static const String NIMBUS_CATEGORY = "Portfolio / CV.";
-  static const String NIMBUS_DESIGNER = "Web Genius Labs.";
-  static const String NIMBUS_SUBTITLE =
-      "Nimbus (Portfolio & CV), a beautifully designed portfolio website.";
-  static const String NIMBUS_DETAIL =
-      "Nimbus is a beautifully designed Portfolio & CV website built with flutter";
-  static const String NIMBUS_GITHUB_URL =
-      "https://github.com/david-legend/nimbus";
-  static const String NIMBUS_WEB_URL = "https://david-legend.github.io/nimbus/";
-
-  static const String ROAM = "Roam";
-  static const String ROAM_PLATFORM = "Android / IOS.";
-  static const String ROAM_CATEGORY = "Travel.";
-  static const String ROAM_DESIGNER = "Georgina Sekyi.";
-  static const String ROAM_SUBTITLE =
-      "UI / UX Case study for a travel advisory app.";
-  static const String ROAM_DETAIL =
-      "Roam is a UI / UX Case study for a travel advisory app done by Georgina Sekyi and built by me using flutter.";
-  static const String ROAM_GITHUB_URL = "https://github.com/david-legend/roam";
-  static const String ROAM_PLAYSTORE_URL =
-      "https://play.google.com/store/apps/details?id=com.davidcobbina.roam";
-
   static const String LOGIN_CATALOG = "Login Catalog";
   static const String LOGIN_CATALOG_PLATFORM = "Android / IOS.";
   static const String LOGIN_CATALOG_CATEGORY = "UI Kit.";
@@ -323,18 +275,6 @@ class StringConst {
   static const String LOGIN_CATALOG_GITHUB_URL =
       "https://github.com/david-legend/login_catalog";
 
-  static const String FOODY_BITE = "FoodyBite";
-  static const String FOODY_BITE_PLATFORM = "Android / IOS.";
-  static const String FOODY_BITE_CATEGORY = "Food / Restaurant.";
-  static const String FOODY_BITE_DESIGNER = "Yagnesh P.";
-  static const String FOODY_BITE_SUBTITLE =
-      "A useful free ui kit design for food related apps";
-  static const String FOODY_BITE_DETAIL =
-      "Foodybite is a free ui kit designed by Yagnesh Pipariya and built by David Cobbina. The goal of this project is to fast track development and inspire developers who want to build a food related app.";
-  static const String FOODY_BITE_PLAYSTORE_URL = "";
-  static const String FOODY_BITE_GITHUB_URL =
-      "https://github.com/david-legend/foodybite";
-
   static const String OTP_TEXT_FIELD = "Otp Textfield";
   static const String OTP_TEXT_FIELD_PLATFORM = "Flutter Package/Library.";
   static const String OTP_TEXT_FIELD_CATEGORY = "Package.";
@@ -346,52 +286,6 @@ class StringConst {
       "https://github.com/david-legend/otp_textfield";
   static const String OTP_TEXT_FIELD_WEB_URL =
       "https://pub.dev/packages/flutter_otp_text_field";
-
-  static const String DISNEY_PLUS = "Disney Plus";
-  static const String DISNEY_PLUS_PLATFORM = "Android.";
-  static const String DISNEY_PLUS_CATEGORY = "UI Kit.";
-  static const String DISNEY_PLUS_SUBTITLE = "Disney+, But Better";
-  static const String DISNEY_PLUS_DETAIL =
-      "Disney Plus is an amazing UI Kit  designed by Andre Carioca. He describes the UI Kit as his attempt of making the current disney plus app better. For me, this project is my attempt at learning and playing with Jetpack Compose. It contains everything that I am learning about the current state of native android development with Kotlin & Jetpack Compose";
-  static const String DISNEY_PLUS_PLAYSTORE_URL = "";
-  static const String DISNEY_PLUS_GITHUB_URL =
-      "https://github.com/david-legend/disneyPlus";
-
-  static const String FLUTTER_CATALOG = "Flutter Catalog";
-  static const String FLUTTER_CATALOG_PLATFORM = "Android / IOS.";
-  static const String FLUTTER_CATALOG_CATEGORY = "UI Kit.";
-  static const String FLUTTER_CATALOG_SUBTITLE =
-      "A beautiful catalog of login designs";
-  static const String FLUTTER_CATALOG_DETAIL =
-      "Flutter Catalog is a beautiful catalog of designs built with flutter. The goal is to catalog different components and building blocks of a mobile app to help flutter devs get right to the most important part of their app.";
-  static const String FLUTTER_CATALOG_PLAYSTORE_URL =
-      "https://play.google.com/store/apps/details?id=dev.davidcobbina.fluttercatalog";
-  static const String FLUTTER_CATALOG_GITHUB_URL =
-      "https://github.com/david-legend/flutter_catalog";
-
-  static const String AERIUM = "Aerium";
-  static const String AERIUM_PLATFORM = "Web.";
-  static const String AERIUM_CATEGORY = "Portfolio / CV.";
-  static const String AERIUM_DESIGNER = "Pavel G.";
-  static const String AERIUM_SUBTITLE =
-      "A progressive web app for showcasing your portfolio.";
-  static const String AERIUM_DETAIL =
-      "Aerium is the first iteration of my portfolio. Aerium is an elegant portfolio website built to help developers tell their story by showcasing their works and skills.";
-  static const String AERIUM_GITHUB_URL =
-      "https://github.com/david-legend/aerium";
-  static const String AERIUM_WEB_URL = "http://david-legend.github.io/aerium";
-
-  static const String AERIUM_V2 = "Aerium V2 ";
-  static const String AERIUM_V2_PLATFORM = "Web.";
-  static const String AERIUM_V2_CATEGORY = "Portfolio / CV.";
-  static const String AERIUM_V2_DESIGNER = "Julius G.";
-  static const String AERIUM_V2_SUBTITLE =
-      "A progressive web app for showcasing your portfolio.";
-  static const String AERIUM_V2_DETAIL =
-      "As you can tell, you're currently on Aerium v2 right now. It is the second iteration of my portfolio website. Aerium V2 is an elegant progressive website built to help developers tell their story by showcasing their works and skills.";
-  static const String AERIUM_V2_GITHUB_URL =
-      "https://github.com/david-legend/david-legend.github.io";
-  static const String AERIUM_V2_WEB_URL = "https://davidcobbina.com/#/";
 
   static const String MAGNIFEST = "Magnifest";
   static const String MAGNIFEST_PLATFORM = "Android / IOS.";
@@ -412,17 +306,6 @@ class StringConst {
       "Vos Help is a two-sided marketplace that connects people seeking emotional and mental health support with verified Helpers. It offers on-demand and scheduled access to compassionate care through audio calls and messaging. The app streamlines discovery, booking, secure payments, and real-time communication—making mental health support more accessible, immediate, and affordable. Users can find help when they need it most, while qualified Helpers can offer their services flexibly.";
   static const String VOS_HELP_GITHUB_URL = "";
   static const String VOS_HELP_PLAYSTORE_URL = "";
-
-  static const String OUTFITR = "Outfitr";
-  static const String OUTFITR_PLATFORM = "Android / IOS.";
-  static const String OUTFITR_CATEGORY = "Ecommerce.";
-  static const String OUTFITR_SUBTITLE =
-      "Design your fashion app faster and easier with Outfitr Fashion UI Kit.";
-  static const String OUTFITR_DETAIL =
-      "With over 30 unique screens, Outfitr UI Kit is a valuable resource for any developer or enterpreneur that wants to standout from the crowd.";
-  static const String OUTFITR_GITHUB_URL =
-      "https://github.com/david-legend/david-legend.github.io";
-  static const String OUTFITR_WEB_URL = "https://davidcobbina.com/#/";
 
   //Noteworthy Projects
   static const String PROGRAMMING_FOR_DATA_SCIENCE =
