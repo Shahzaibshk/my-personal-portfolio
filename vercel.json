@@ -1,4 +1,10 @@
 {
-  "buildCommand": "bash scripts/build.sh",
-  "outputDirectory": "build/web"
+    "buildCommand": "bash scripts/build.sh",
+    "outputDirectory": "build/web",
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ]
 }

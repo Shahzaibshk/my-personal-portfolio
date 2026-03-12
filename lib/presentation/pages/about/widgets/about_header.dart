@@ -45,7 +45,7 @@ class AboutHeader extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(80),
                 child: Image.asset(
-                  ImagePath.DEV,
+                  ImagePath.DEV_PROFILE,
                   fit: BoxFit.cover,
                   width: widthOfScreen(context),
                   height: assignHeight(context, 0.45),
@@ -76,7 +76,7 @@ class AboutHeader extends StatelessWidget {
                     maxHeight: assignHeight(context, 0.55),
                   ),
                   child: Image.asset(
-                    ImagePath.DEV,
+                    ImagePath.DEV_PROFILE,
                     fit: BoxFit.cover,
                   ),
                 ),
