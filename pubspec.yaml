@@ -75,6 +75,8 @@ flutter:
     - assets/images/projects/otp_package/
     - assets/images/projects/roam/
     - assets/images/projects/outfitr/
+    - assets/images/projects/vos_help/
+    - assets/images/projects/magnifest/
     - assets/screenshots/
   #    - assets/screenshots/
 

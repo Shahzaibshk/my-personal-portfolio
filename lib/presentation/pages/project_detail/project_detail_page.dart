@@ -13,6 +13,7 @@ import 'package:aerium/presentation/widgets/project_item.dart';
 import 'package:aerium/presentation/widgets/spaces.dart';
 import 'package:aerium/values/values.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 class ProjectDetailArguments {
@@ -69,7 +70,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
         _waveController.forward();
       }
     });
-     _projectDataController = AnimationController(
+    _projectDataController = AnimationController(
       vsync: this,
       duration: Animations.slideAnimationDurationShort,
     );
@@ -85,15 +86,23 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
     super.dispose();
   }
 
-  ProjectDetailArguments getArguments() {
-    projectDetails =
-        ModalRoute.of(context)!.settings.arguments as ProjectDetailArguments;
-    return projectDetails;
+  bool getArguments() {
+    final args = ModalRoute.of(context)?.settings.arguments;
+    if (args == null || args is! ProjectDetailArguments) {
+      return false;
+    }
+    projectDetails = args;
+    return true;
   }
 
   @override
   Widget build(BuildContext context) {
-    getArguments();
+    if (!getArguments()) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        Navigator.pushReplacementNamed(context, StringConst.WORKS_PAGE);
+      });
+      return const SizedBox.shrink();
+    }
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? coverTitleStyle = textTheme.displayMedium?.copyWith(
       color: AppColors.white,
@@ -113,7 +122,6 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
         assignWidth(context, 0.10),
         assignWidth(context, 0.25),
       ),
-     
     );
     double contentAreaWidth = responsiveSize(
       context,
@@ -138,55 +146,28 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
           parent: AlwaysScrollableScrollPhysics(),
         ),
         children: [
-          Container(
-            width: widthOfScreen(context),
-            height: heightOfScreen(context),
+          ClipRect(
             child: Stack(
               children: [
                 Image.asset(
                   projectDetails.data.coverUrl,
-                  fit: BoxFit.cover,
                   width: widthOfScreen(context),
-                  height: heightOfScreen(context),
+                  fit: BoxFit.fitWidth,
                 ),
-                Container(
-                  margin: EdgeInsets.only(bottom: waveLineHeight + 40),
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        AnimatedTextSlideBoxTransition(
-                          controller: _controller,
-                          widthFactor: 1.20,
-                          text: "${projectDetails.data.title}.",
-                          coverColor: projectDetails.data.primaryColor,
-                          textStyle: coverTitleStyle,
-                          textAlign: TextAlign.center,
-                        ),
-                        SpaceH20(),
-                        AnimatedTextSlideBoxTransition(
-                          controller: _controller,
-                          widthFactor: 1.20,
-                          text: projectDetails.data.category,
-                          coverColor: projectDetails.data.primaryColor,
-                          textStyle: coverSubtitleStyle,
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
+                if (widthOfScreen(context) > RefinedBreakpoints().tabletSmall)
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: AnimatedWaveLine(
+                        height: waveLineHeight,
+                        controller: _waveController,
+                        color: projectDetails.data.primaryColor,
+                      ),
                     ),
                   ),
-                ),
-                Positioned(
-                  child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: AnimatedWaveLine(
-                      height: waveLineHeight,
-                      controller: _waveController,
-                      color: projectDetails.data.primaryColor,
-                    ),
-                  ),
-                )
               ],
             ),
           ),
@@ -256,6 +237,9 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
           fit: BoxFit.cover,
         ),
       );
+      if (index < data.length - 1) {
+        items.add(const SizedBox(height: 48));
+      }
     }
 
     return items;

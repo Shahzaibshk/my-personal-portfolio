@@ -210,6 +210,8 @@ class Data {
   ];
 
   static List<ProjectItemData> recentWorks = [
+    Projects.MAGNIFEST,
+    Projects.VOS_HELP,
     Projects.DISNEY_PLUS,
     Projects.FLUTTER_CATALOG,
     Projects.DROP,
@@ -220,6 +222,8 @@ class Data {
   ];
 
   static List<ProjectItemData> projects = [
+    Projects.MAGNIFEST,
+    Projects.VOS_HELP,
     Projects.DISNEY_PLUS,
     Projects.FLUTTER_CATALOG,
     Projects.DROP,
@@ -398,6 +402,53 @@ class Data {
 }
 
 class Projects {
+  static ProjectItemData MAGNIFEST = ProjectItemData(
+    title: StringConst.MAGNIFEST,
+    subtitle: StringConst.MAGNIFEST_SUBTITLE,
+    platform: StringConst.MAGNIFEST_PLATFORM,
+    primaryColor: AppColors.magnifest,
+    image: ImagePath.MAGNIFEST_COVER,
+    coverUrl: ImagePath.MAGNIFEST_COVER,
+    category: StringConst.MAGNIFEST_CATEGORY,
+    navTitleColor: AppColors.magnifestNavTitle,
+    navSelectedTitleColor: AppColors.magnifestSelectedNavTitle,
+    appLogoColor: AppColors.magnifestAppLogo,
+    projectAssets: [
+      ImagePath.MAGNIFEST_OVERVIEW,
+      ImagePath.MAGNIFEST_DETAILED,
+      ImagePath.MAGNIFEST_COMPLETE_OVERVIEW,
+    ],
+    portfolioDescription: StringConst.MAGNIFEST_DETAIL,
+    isPublic: false,
+    isOnPlayStore: false,
+    technologyUsed: StringConst.FLUTTER,
+    gitHubUrl: StringConst.MAGNIFEST_GITHUB_URL,
+    playStoreUrl: StringConst.MAGNIFEST_PLAYSTORE_URL,
+  );
+  static ProjectItemData VOS_HELP = ProjectItemData(
+    title: StringConst.VOS_HELP,
+    subtitle: StringConst.VOS_HELP_SUBTITLE,
+    platform: StringConst.VOS_HELP_PLATFORM,
+    primaryColor: AppColors.vosHelp,
+    image: ImagePath.VOS_HELP_COVER,
+    coverUrl: ImagePath.VOS_HELP_COVER,
+    category: StringConst.VOS_HELP_CATEGORY,
+    navTitleColor: AppColors.vosHelpNavTitle,
+    navSelectedTitleColor: AppColors.vosHelpSelectedNavTitle,
+    appLogoColor: AppColors.vosHelpAppLogo,
+    projectAssets: [
+      ImagePath.VOS_HELP_DESC,
+      ImagePath.VOS_HELP_APPOINTMENT,
+      ImagePath.VOS_HELP_DETAILED,
+      ImagePath.VOS_HELP_THANKYOU,
+    ],
+    portfolioDescription: StringConst.VOS_HELP_DETAIL,
+    isPublic: false,
+    isOnPlayStore: false,
+    technologyUsed: StringConst.FLUTTER,
+    gitHubUrl: StringConst.VOS_HELP_GITHUB_URL,
+    playStoreUrl: StringConst.VOS_HELP_PLAYSTORE_URL,
+  );
   static ProjectItemData DISNEY_PLUS = ProjectItemData(
     title: StringConst.DISNEY_PLUS,
     subtitle: StringConst.DISNEY_PLUS,

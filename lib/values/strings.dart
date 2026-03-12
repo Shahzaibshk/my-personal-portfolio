@@ -393,6 +393,26 @@ class StringConst {
       "https://github.com/david-legend/david-legend.github.io";
   static const String AERIUM_V2_WEB_URL = "https://davidcobbina.com/#/";
 
+  static const String MAGNIFEST = "Magnifest";
+  static const String MAGNIFEST_PLATFORM = "Android / IOS.";
+  static const String MAGNIFEST_CATEGORY = "Health & Wellness.";
+  static const String MAGNIFEST_SUBTITLE =
+      "A meditation and mindfulness app for mental wellness.";
+  static const String MAGNIFEST_DETAIL =
+      "Magnifest is a meditation and mindfulness app designed to enhance mental wellness through curated audio experiences. It provides guided tracks for sleep, focus, stress relief, and relaxation, helping users build consistent daily wellness practices. The app offers personalized content, premium features like sleep timers and background playback, and a seamless experience across authentication, favorites, and audio playback.";
+  static const String MAGNIFEST_GITHUB_URL = "";
+  static const String MAGNIFEST_PLAYSTORE_URL = "";
+
+  static const String VOS_HELP = "Vos Help";
+  static const String VOS_HELP_PLATFORM = "Android / IOS.";
+  static const String VOS_HELP_CATEGORY = "Health & Wellness.";
+  static const String VOS_HELP_SUBTITLE =
+      "A two-sided marketplace for mental health support.";
+  static const String VOS_HELP_DETAIL =
+      "Vos Help is a two-sided marketplace that connects people seeking emotional and mental health support with verified Helpers. It offers on-demand and scheduled access to compassionate care through audio calls and messaging. The app streamlines discovery, booking, secure payments, and real-time communication—making mental health support more accessible, immediate, and affordable. Users can find help when they need it most, while qualified Helpers can offer their services flexibly.";
+  static const String VOS_HELP_GITHUB_URL = "";
+  static const String VOS_HELP_PLAYSTORE_URL = "";
+
   static const String OUTFITR = "Outfitr";
   static const String OUTFITR_PLATFORM = "Android / IOS.";
   static const String OUTFITR_CATEGORY = "Ecommerce.";

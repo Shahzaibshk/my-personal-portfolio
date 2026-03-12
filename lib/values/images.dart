@@ -181,6 +181,26 @@ class ImagePath {
   static const String AMOR_COVER =
       "$projectsDir/login_catalog/foodybite_cover.png";
 
+  // Magnifest
+  static const String MAGNIFEST_COVER =
+      "$projectsDir/magnifest/magnifest_cover.jpg";
+  static const String MAGNIFEST_OVERVIEW =
+      "$projectsDir/magnifest/magnifest_overview.jpg";
+  static const String MAGNIFEST_DETAILED =
+      "$projectsDir/magnifest/magnifest_detailed.jpg";
+  static const String MAGNIFEST_COMPLETE_OVERVIEW =
+      "$projectsDir/magnifest/magnifest_complete_overview.jpg";
+
+  // Vos Help
+  static const String VOS_HELP_COVER = "$projectsDir/vos_help/vos_cover.jpg";
+  static const String VOS_HELP_DESC = "$projectsDir/vos_help/vos_description.jpg";
+  static const String VOS_HELP_APPOINTMENT =
+      "$projectsDir/vos_help/vos_appointment.jpg";
+  static const String VOS_HELP_DETAILED =
+      "$projectsDir/vos_help/vos_detailed.jpg";
+  static const String VOS_HELP_THANKYOU =
+      "$projectsDir/vos_help/vos_thankyou.jpg";
+
   // Outfitr
   static const String OUTFITR_COVER = "$projectsDir/outfitr/outfitr_cover.jpg";
   static const String OUTFITR_1 = "$projectsDir/outfitr/outfitr_1.jpeg";
