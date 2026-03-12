@@ -1,25 +1,15 @@
-# #!/bin/bash
-
-# # Install Flutter
-# git clone https://github.com/flutter/flutter.git --depth 1 -b stable
-# export PATH="$PATH:`pwd`/flutter/bin"
-
-# flutter doctor
-# flutter config --enable-web
-
-# flutter pub get
-# flutter build web
-
-
 #!/bin/bash
 
-set -e  # stop on error
+set -e
 
 echo "Installing Flutter..."
 
 git clone https://github.com/flutter/flutter.git --depth 1 -b stable $HOME/flutter
 
 export PATH="$PATH:$HOME/flutter/bin"
+
+# ✅ Allow running as root (REQUIRED for Vercel)
+export CI=true
 
 flutter --version
 flutter config --enable-web
