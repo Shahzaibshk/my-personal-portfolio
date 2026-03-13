@@ -97,10 +97,6 @@ class Data {
       name: StringConst.EXPERIENCE,
       route: StringConst.EXPERIENCE_PAGE,
     ),
-    NavItemData(
-      name: StringConst.CERTIFICATIONS,
-      route: StringConst.CERTIFICATION_PAGE,
-    ),
     NavItemData(name: StringConst.CONTACT, route: StringConst.CONTACT_PAGE),
   ];
 
@@ -115,58 +111,27 @@ class Data {
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
     ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
-    SocialData(
-      name: StringConst.INSTAGRAM,
-      iconData: FontAwesomeIcons.instagram,
-      url: StringConst.INSTAGRAM_URL,
-    ),
-    SocialData(
-      name: StringConst.TELEGRAM,
-      iconData: FontAwesomeIcons.telegram,
-      url: StringConst.TELEGRAM_URL,
-    ),
   ];
 
   static List<String> mobileTechnologies = [
-    "Android",
-    "Kotlin",
-    "Jetpack Compose",
     "Flutter",
-    "Dart"
-        "Java Android",
+    "Android",
+    "IOS",
   ];
 
   static List<String> otherTechnologies = [
-    "HTML 5",
-    "CSS 3",
-    "JavaScript",
-    "Typescript",
-    "React JS",
-    "Next JS",
-    "Node JS",
-    "Git",
-    "AWS",
-    "Docker",
-    "Kubernetes",
-    "Google Cloud",
-    "Azure",
-    "Travis CI",
-    "Circle CI",
-    "Express",
-    "Chakra UI",
-    "Laravel",
-    "PHP",
-    "SQL",
-    "C++",
     "Firebase",
+    "Google Cloud",
+    "Typescript",
+    "SQL",
     "Figma",
-    "Adobe XD",
-    "Wordpress",
+    "Git",
+    "Github",
+    "Stripe",
+    "Stream Video",
+    "Hive",
+    "Riverpod",
+    "Shared Pref",
   ];
   static List<SocialData> socialData1 = [
     SocialData(
@@ -179,33 +144,18 @@ class Data {
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
     ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
   ];
 
   static List<SocialData> socialData2 = [
     SocialData(
+      name: StringConst.GITHUB,
+      iconData: FontAwesomeIcons.github,
+      url: StringConst.GITHUB_URL,
+    ),
+    SocialData(
       name: StringConst.LINKED_IN,
       iconData: FontAwesomeIcons.linkedin,
       url: StringConst.LINKED_IN_URL,
-    ),
-    SocialData(
-      name: StringConst.TWITTER,
-      iconData: FontAwesomeIcons.twitter,
-      url: StringConst.TWITTER_URL,
-    ),
-    SocialData(
-      name: StringConst.INSTAGRAM,
-      iconData: FontAwesomeIcons.instagram,
-      url: StringConst.INSTAGRAM_URL,
-    ),
-    SocialData(
-      name: StringConst.TELEGRAM,
-      iconData: FontAwesomeIcons.telegram,
-      url: StringConst.TELEGRAM_URL,
     ),
   ];
 
@@ -337,42 +287,6 @@ class Data {
 
   static List<ExperienceData> experienceData = [
     ExperienceData(
-      company: StringConst.COMPANY_5,
-      position: StringConst.POSITION_5,
-      companyUrl: StringConst.COMPANY_5_URL,
-      roles: [
-        StringConst.COMPANY_5_ROLE_1,
-        StringConst.COMPANY_5_ROLE_2,
-        StringConst.COMPANY_5_ROLE_3,
-      ],
-      location: StringConst.LOCATION_5,
-      duration: StringConst.DURATION_5,
-    ),
-    ExperienceData(
-      company: StringConst.COMPANY_4,
-      position: StringConst.POSITION_4,
-      companyUrl: StringConst.COMPANY_4_URL,
-      roles: [
-        StringConst.COMPANY_4_ROLE_1,
-        StringConst.COMPANY_4_ROLE_2,
-        StringConst.COMPANY_4_ROLE_3,
-      ],
-      location: StringConst.LOCATION_4,
-      duration: StringConst.DURATION_4,
-    ),
-    ExperienceData(
-      company: StringConst.COMPANY_3,
-      position: StringConst.POSITION_3,
-      companyUrl: StringConst.COMPANY_3_URL,
-      roles: [
-        StringConst.COMPANY_3_ROLE_1,
-        StringConst.COMPANY_3_ROLE_2,
-        StringConst.COMPANY_3_ROLE_3,
-      ],
-      location: StringConst.LOCATION_3,
-      duration: StringConst.DURATION_3,
-    ),
-    ExperienceData(
       company: StringConst.COMPANY_2,
       position: StringConst.POSITION_2,
       companyUrl: StringConst.COMPANY_2_URL,
@@ -383,6 +297,18 @@ class Data {
       ],
       location: StringConst.LOCATION_2,
       duration: StringConst.DURATION_2,
+    ),
+    ExperienceData(
+      company: StringConst.COMPANY_1,
+      position: StringConst.POSITION_1,
+      companyUrl: StringConst.COMPANY_1_URL,
+      roles: [
+        StringConst.COMPANY_1_ROLE_1,
+        StringConst.COMPANY_1_ROLE_2,
+        StringConst.COMPANY_1_ROLE_3,
+      ],
+      location: StringConst.LOCATION_1,
+      duration: StringConst.DURATION_1,
     ),
   ];
 }

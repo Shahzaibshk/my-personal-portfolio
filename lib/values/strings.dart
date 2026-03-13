@@ -4,7 +4,6 @@ class StringConst {
   //strings
   static const String APP_NAME = "Shahzaib Ali Portfolio";
   static const String APP_TITLE = "Shahzaib Ali Portfolio";
-  static const String SITE_URL = "https://davidcobbina.com";
 
   static const String HOME = "Home";
   static const String ABOUT = "About";
@@ -22,10 +21,10 @@ class StringConst {
 
   // Home Page
   static const String HI = "Hi,";
-  static const String DEV_INTRO = "I'm Shahzaib.";
+  static const String DEV_INTRO = "I'm Shahzaib Ali.";
   static const String DEV_TITLE = "Flutter Developer.";
   static const String DEV_DESC =
-      "Mobile Engineer / Full Stack Developer / Tech Enthusiast.";
+      "Mobile Engineer / Flutter App Developer / Tech Enthusiast.";
   static const String SEE_MY_WORKS = "See my works";
   static const String SCROLL_DOWN = "Scroll Down";
   static const String CRAFTED_WITH_LOVE = "Crafted with love.";
@@ -65,18 +64,21 @@ class StringConst {
   static const String ABOUT_DEV_CATCH_LINE_2 = "quality mobile applications.";
   // static const String ABOUT_DEV_CATCH_LINE_3 = "& web applications";
   static const String ABOUT_DEV_CATCH_LINE_4 = "I also have a strong";
-  static const String ABOUT_DEV_CATCH_LINE_5 = "passion for opensource work.";
+  static const String ABOUT_DEV_CATCH_LINE_5 =
+      "passion for solving complex problems.";
   static const String ABOUT_DEV_STORY = "Story";
   static const String ABOUT_DEV_STORY_TITLE = "A little bit about myself.";
   static const String ABOUT_DEV_STORY_CONTENT_1 =
-      "I am full stack software engineer with great passion for building high quality applications. I have an extensive experience building frontend (mobile & web) and backend applications. I occasionally work as a tech consultant and I am enthusiastic about Devops & Cloud computing technologies.";
+      "I’m Shahzaib Ali, a Flutter developer with 1.5+ years of experience building high-quality cross-platform mobile applications using Dart and Flutter. I focus on creating clean, responsive user interfaces and scalable architectures that deliver smooth and reliable user experiences.";
+
   static const String ABOUT_DEV_STORY_CONTENT_2 =
-      "I have a Masters in IT from Carnegie Mellon University where I majored in Software Engineering. I have strong technical skills as well as excellent interpersonal skills, which has enabled me to work & interact with clients all over the world.";
+      "I specialize in integrating backend services such as Firebase Authentication and Cloud Firestore, enabling real-time data handling and secure mobile applications. I also leverage modern state management solutions like Riverpod to build maintainable and scalable Flutter apps.";
+
   static const String ABOUT_DEV_STORY_CONTENT_3 =
-      "I am very great at finding solutions to problems and I have a very keen eye for details. I enjoy building fun/useful projects in my free time and open sourcing them. I am an avid reader, lover of all forms art & music, a big fan of poetry & I love travelling.";
+      "I enjoy solving complex problems and continuously improving app performance and architecture. From designing UI components to implementing real-time features, payments, and notifications, I strive to deliver complete end-to-end mobile solutions.";
   static const String ABOUT_DEV_TECHNOLOGY = "Technology";
   static const String MOBILE_TECH = "Mobile Technologies";
-  static const String OTHER_TECH = "Web / Cloud / Design Technologies";
+  static const String OTHER_TECH = "Cloud / Design Technologies";
   static const String ABOUT_DEV_TECHNOLOGY_TITLE = "What I use.";
   static const String ABOUT_DEV_TECHNOLOGY_CONTENT =
       "I use a number of tools to aid my creative process when bringing things to life. Listed below are the tools and technologies that I have used over the years.";
@@ -112,7 +114,7 @@ class StringConst {
   static const String VIEW = "View";
   static const String COMING_SOON = "COMING SOON !!";
   static const String BUILT_WITH_FLUTTER = "Built using ";
-  static const String DEV_EMAIL = "davidcobbina47@gmail.com";
+  static const String DEV_EMAIL = "ishahzaibali1472@gmail.com";
   static const String EMAIL_URL = "mailto:<$DEV_EMAIL>?subject=&body=";
 
   static const String KEY_SKILLS = "KEY SKILLS";
@@ -169,21 +171,14 @@ class StringConst {
 
   //Socials
 
-  static const String GITHUB_URL = "https://github.com/david-legend";
+  static const String GITHUB_URL = "https://github.com/Shahzaibshk";
   static const String LINKED_IN_URL =
-      "https://www.linkedin.com/in/david-cobbina-7b0226119";
-  static const String TWITTER_URL = "https://twitter.com/DavidLegend47";
-  static const String INSTAGRAM_URL =
-      "https://www.instagram.com/david_legend_47";
-  static const String TELEGRAM_URL = "https://t.me/DavidLegend";
+      "https://www.linkedin.com/in/shahzaib-ali-3241a530b/";
 
   //Contacts
   static const String CONNECT = "Connect with me";
   static const String EMAIL = "Email";
   static const String LINKED_IN = "LinkedIn";
-  static const String TWITTER = "Twitter";
-  static const String INSTAGRAM = "Instagram";
-  static const String TELEGRAM = "Telegram";
   static const String GITHUB = "Github";
 
   //Certificate Urls
@@ -214,53 +209,29 @@ class StringConst {
   static const String CURRENT_MONTH_YEAR = "May 2020 - Current";
   static const String STARTED_MONTH_YEAR = "May 2017";
 
-  static const String COMPANY_2 = "Shrinq";
-  static const String COMPANY_2_URL = "https://shrinqghana.com/";
-  static const String POSITION_2 = "Software Engineer";
+  static const String COMPANY_1 = "Orion Techz";
+  static const String COMPANY_1_URL = "";
+  static const String POSITION_1 = "Flutter Internee";
+  static const String COMPANY_1_ROLE_1 =
+      "Learned Dart and Flutter from scratch, building strong foundations in widgets, layouts, and state management while developing mobile applications.";
+  static const String COMPANY_1_ROLE_2 =
+      "Collaborated in an agile development environment, following clean code practices and implementing scalable architecture using Riverpod and Flutter Hooks.";
+  static const String COMPANY_1_ROLE_3 =
+      "Gained hands-on experience integrating Firebase Firestore for real-time data handling and backend functionality in Flutter apps.";
+  static const String LOCATION_1 = "";
+  static const String DURATION_1 = "May 2024 - Oct 2024";
+
+  static const String COMPANY_2 = "Arsync Solutions";
+  static const String COMPANY_2_URL = "";
+  static const String POSITION_2 = "Flutter Developer";
   static const String COMPANY_2_ROLE_1 =
-      "Built a mobile app to track the status of all requested fibre broadband for Vodafone Ghana using Java Android.";
+      "Developed and deployed 3+ production-ready Flutter applications from concept to release on the App Store and Google Play Store.";
   static const String COMPANY_2_ROLE_2 =
-      "Worked on a team of 2 to build an ID verification application using Java Android.";
+      "Built key features such as real-time chat & calling, meditation content platforms, and habit tracking, including projects like VOS Mental Health and MAGNIFEST.";
   static const String COMPANY_2_ROLE_3 =
-      "Developed and maintained client & in-house projects primarily using Javascript, React js, Next js, Express and Node js";
-  static const String LOCATION_2 = "Asylum Down - Accra";
-  static const String DURATION_2 = "April 2018 - June 2019";
-
-  static const String COMPANY_3 = "Bewsys";
-  static const String COMPANY_3_URL = "https://bewsys.com/";
-  static const String POSITION_3 = "Software Engineer";
-  static const String COMPANY_3_ROLE_1 =
-      "Worked in a team of 3 to design and implement backend infrastructure of an inmate management system for the National Prison of South Sudan.";
-  static const String COMPANY_3_ROLE_2 =
-      "Architected and implemented a mobile application for the Palestinian Agriculture Advisory System.";
-  static const String COMPANY_3_ROLE_3 =
-      "Modified existing software to correct errors, upgrade interfaces and improve performance.";
-  static const String LOCATION_3 = "East Legon - Accra";
-  static const String DURATION_3 = "August 2019 - April 2020";
-
-  static const String COMPANY_4 = "Brij Money";
-  static const String COMPANY_4_URL = "https://www.brij.money/";
-  static const String POSITION_4 = "Software Engineer Intern";
-  static const String COMPANY_4_ROLE_1 =
-      "Worked closely with designers & backend engineers to develop and ship merchants feature which allowed end users to purchase items from a merchant store on the Brij app.";
-  static const String COMPANY_4_ROLE_2 =
-      "Developed and shipped airtime & bundle purchasing feature on the Brij mobile app.";
-  static const String COMPANY_4_ROLE_3 =
-      "Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across brij’s iOS and Android mobile apps.";
-  static const String LOCATION_4 = "Accra - Ghana";
-  static const String DURATION_4 = "June 2021 - Aug 2021";
-
-  static const String COMPANY_5 = "Consultant";
-  static const String COMPANY_5_URL = SITE_URL;
-  static const String POSITION_5 = "Software Engineer Consultant";
-  static const String COMPANY_5_ROLE_1 =
-      "Led engineering team to develop & ship a SaaS grid monitoring mobile application platform for Hive Power company in Switzerland.";
-  static const String COMPANY_5_ROLE_2 =
-      "Designed and built technology infrastructure for a leading Ghanaian Insurance company";
-  static const String COMPANY_5_ROLE_3 =
-      "Worked with GoFlow Services in India to improve the architecture of an already existing video streaming mobile application (BeThere).";
-  static const String LOCATION_5 = "Kigali - Rwanda";
-  static const String DURATION_5 = "May 2020 - Sept 2022";
+      "Integrated backend and monetization systems including Firebase Authentication, Cloud Firestore, Stripe payments, in-app purchases, push notifications, and Hive for local data persistence.";
+  static const String LOCATION_2 = "";
+  static const String DURATION_2 = "Nov 2024 - Present";
 
   //Portfolio, Projects
   static const String LOGIN_CATALOG = "Login Catalog";

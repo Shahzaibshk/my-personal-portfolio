@@ -61,7 +61,10 @@ class NavBar extends StatelessWidget {
       ),
       child: Row(
         children: [
-          AppLogo(fontSize: Sizes.TEXT_SIZE_40, titleColor: appLogoColor,),
+          AppLogo(
+            fontSize: Sizes.TEXT_SIZE_40,
+            titleColor: appLogoColor,
+          ),
           Spacer(),
           InkWell(
             onTap: onMenuTap,

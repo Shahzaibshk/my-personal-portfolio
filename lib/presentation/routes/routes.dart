@@ -1,5 +1,4 @@
 import 'package:aerium/presentation/pages/about/about_page.dart';
-import 'package:aerium/presentation/pages/certification_page.dart';
 import 'package:aerium/presentation/pages/contact_page.dart';
 import 'package:aerium/presentation/pages/experience_page.dart';
 import 'package:aerium/presentation/pages/privacy_policy_page.dart';
@@ -61,12 +60,12 @@ class RouteConfiguration {
       r'^' + ExperiencePage.experiencePageRoute,
       (context, matches) => const ExperiencePage(),
     ),
-    Path(
-      r'^' + CertificationPage.certificationPageRoute,
-      (context, matches) => const CertificationPage(),
+Path(
+      r'^' + HomePage.homePageRoute,
+      (context, matches) => HomePage(),
     ),
     Path(
-      r'^' + HomePage.homePageRoute,
+      r'^/$',
       (context, matches) => HomePage(),
     ),
   ];

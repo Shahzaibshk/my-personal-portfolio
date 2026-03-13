@@ -1,15 +1,27 @@
+import 'dart:html' as html;
+
 import 'package:aerium/presentation/pages/project_detail/project_detail_page.dart';
 import 'package:aerium/presentation/widgets/project_item.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher.dart' as url_launcher;
 
 class Functions {
   static void launchUrl(String url) async {
     final uri = Uri.parse(url);
-    if (!await canLaunchUrl(uri)) {
-      throw 'Could not launch $url';
+    if (uri.scheme.isEmpty) {
+      // Local asset path — use an anchor element to trigger download
+      final anchor = html.AnchorElement(href: url)
+        ..setAttribute('download', url.split('/').last)
+        ..click();
+      anchor.remove();
+    } else {
+      if (await url_launcher.canLaunchUrl(uri)) {
+        await url_launcher.launchUrl(
+          uri,
+          mode: url_launcher.LaunchMode.externalApplication,
+        );
+      }
     }
-    // await launchUrl(uri);
   }
 
   static Size textSize({
