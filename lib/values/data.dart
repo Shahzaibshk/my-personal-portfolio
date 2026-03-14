@@ -341,7 +341,7 @@ class Projects {
     title: StringConst.VOS_HELP,
     subtitle: StringConst.VOS_HELP_SUBTITLE,
     platform: StringConst.VOS_HELP_PLATFORM,
-    primaryColor: AppColors.vosHelp,
+    primaryColor: AppColors.vosHelpAppLogo,
     image: ImagePath.VOS_HELP_COVER,
     coverUrl: ImagePath.VOS_HELP_COVER,
     category: StringConst.VOS_HELP_CATEGORY,
