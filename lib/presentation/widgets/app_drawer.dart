@@ -1,6 +1,8 @@
 import 'package:aerium/core/layout/adaptive.dart';
+import 'package:aerium/core/utils/functions.dart';
 import 'package:aerium/presentation/pages/home/home_page.dart';
 import 'package:aerium/presentation/pages/widgets/socials.dart';
+import 'package:aerium/presentation/widgets/aerium_button.dart';
 import 'package:aerium/presentation/widgets/app_logo.dart';
 import 'package:aerium/presentation/widgets/nav_item.dart';
 import 'package:aerium/presentation/widgets/page_wrapper.dart';
@@ -126,6 +128,19 @@ class _AppDrawerState extends State<AppDrawer>
                         Spacer(flex: 2),
                         ..._buildMenuList(
                             menuList: widget.menuList, context: context),
+                        SpaceH20(),
+                        AeriumButton(
+                          height: Sizes.HEIGHT_36,
+                          hasIcon: false,
+                          width: 120,
+                          buttonColor: AppColors.black,
+                          borderColor: AppColors.accentColor,
+                          onHoverColor: AppColors.accentColor,
+                          title: StringConst.RESUME.toUpperCase(),
+                          onPressed: () {
+                            Functions.launchUrl(DocumentPath.CV);
+                          },
+                        ),
                         Spacer(flex: 2),
                       ],
                     ),
