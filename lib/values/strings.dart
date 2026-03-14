@@ -23,8 +23,7 @@ class StringConst {
   static const String HI = "Hi,";
   static const String DEV_INTRO = "I'm Shahzaib Ali.";
   static const String DEV_TITLE = "Flutter Developer.";
-  static const String DEV_DESC =
-      "Mobile Engineer / Flutter App Developer / Tech Enthusiast.";
+  static const String DEV_DESC = "Mobile Engineer / Flutter App Developer.";
   static const String SEE_MY_WORKS = "See my works";
   static const String SCROLL_DOWN = "Scroll Down";
   static const String CRAFTED_WITH_LOVE = "Crafted with love.";
@@ -58,8 +57,7 @@ class StringConst {
       "Something went wrong. Please send me an email manually - ${StringConst.DEV_EMAIL}";
 
   // About Page
-  static const String ABOUT_DEV_CATCH_LINE =
-      "I am a passionate front-end developer and ui/ux designer with a keen eye for details.";
+
   static const String ABOUT_DEV_CATCH_LINE_1 = "I specialize in building high ";
   static const String ABOUT_DEV_CATCH_LINE_2 = "quality mobile applications.";
   // static const String ABOUT_DEV_CATCH_LINE_3 = "& web applications";
@@ -141,18 +139,7 @@ class StringConst {
 
   //Skills
   static const String FLUTTER = "Flutter";
-  static const String JETPACK_COMPOSE = "Jetpack Compose";
-  static const String JAVA = "Java";
   static const String ANDROID = "Android";
-  static const String PYTHON = "Python";
-  static const String KOTLIN = "Kotlin";
-  static const String JAVASCRIPT = "Javascript";
-  static const String PHP = "PHP";
-  static const String LARAVEL = "Laravel";
-  static const String SQL = "SQL";
-  static const String WORDPRESS = "Wordpress";
-  static const String BOOTSTRAP = "Bootstrap";
-  static const String HTML_CSS = "HTML/CSS";
 
   //routes
   static const String LOADING_PAGE = "/";
@@ -181,33 +168,7 @@ class StringConst {
   static const String LINKED_IN = "LinkedIn";
   static const String GITHUB = "Github";
 
-  //Certificate Urls
-  static const String CMU_CERT_URL =
-      "https://www.cmu.edu/hub/registrar/graduation/diplomas/electronic/validation/index.html";
-  static const String ASSOCIATE_ANDROID_DEV_URL =
-      "https://www.credential.net/b296da88-d6be-4bb5-9756-b13efea3a421";
-  static const String DATA_SCIENCE_CERT_URL =
-      "https://graduation.udacity.com/confirm/7CGEJAFR";
-  static const String CLOUD_DEVELOPER_URL =
-      "https://confirm.udacity.com/PJU23DCP";
-  static const String ANDROID_BASICS_CERT_URL =
-      "https://graduation.udacity.com/confirm/9VTDRN5K";
-
-  //AwardedBy
-  static const String GOOGLE = "Google";
-  static const String UDACITY = "Udacity";
-  static const String CMU = "Carnegie Mellon University";
-
-  //CertificationType
-  static const String MSC_IT = "Msc In Information Technology";
-  static const String ASSOCIATE_ANDROID_DEV = "Associate Android Developer";
-  static const String CLOUD_DEVELOPER = "Cloud Developer";
-  static const String DATA_SCIENCE = "Data Science";
-  static const String ANDROID_BASICS = "Android Basics";
-
   //Experience
-  static const String CURRENT_MONTH_YEAR = "May 2020 - Current";
-  static const String STARTED_MONTH_YEAR = "May 2017";
 
   static const String COMPANY_1 = "Orion Techz";
   static const String COMPANY_1_URL = "";

@@ -195,26 +195,6 @@ class Data {
       isLive: false,
     ),
     NoteWorthyProjectDetails(
-      projectName: StringConst.PYTHON_ALGORITHMS,
-      isPublic: true,
-      isOnPlayStore: false,
-      isWeb: false,
-      technologyUsed: StringConst.PYTHON,
-      projectDescription: StringConst.PYTHON_ALGORITHMS_DETAIL,
-      gitHubUrl: StringConst.PYTHON_ALGORITHMS_GITHUB_URL,
-      isLive: false,
-    ),
-    NoteWorthyProjectDetails(
-      projectName: StringConst.PROGRAMMING_FOR_DATA_SCIENCE,
-      isPublic: true,
-      isOnPlayStore: false,
-      isWeb: false,
-      technologyUsed: StringConst.PYTHON,
-      projectDescription: StringConst.PROGRAMMING_FOR_DATA_SCIENCE_DETAIL,
-      gitHubUrl: StringConst.PROGRAMMING_FOR_DATA_SCIENCE_GITHUB_URL,
-      isLive: false,
-    ),
-    NoteWorthyProjectDetails(
       projectName: StringConst.ONBOARDING_APP,
       isPublic: true,
       isOnPlayStore: false,
@@ -247,43 +227,7 @@ class Data {
     ),
   ];
 
-  static List<CertificationData> certificationData = [
-    CertificationData(
-      title: StringConst.MSC_IT,
-      url: StringConst.CMU_CERT_URL,
-      image: ImagePath.CMU_MASTERS_CERT,
-      imageSize: 0.325,
-      awardedBy: StringConst.CMU,
-    ),
-    CertificationData(
-      title: StringConst.ASSOCIATE_ANDROID_DEV,
-      url: StringConst.ASSOCIATE_ANDROID_DEV_URL,
-      image: ImagePath.ASSOCIATE_ANDROID_DEV,
-      imageSize: 0.325,
-      awardedBy: StringConst.GOOGLE,
-    ),
-    CertificationData(
-      title: StringConst.CLOUD_DEVELOPER,
-      url: StringConst.CLOUD_DEVELOPER_URL,
-      image: ImagePath.CLOUD_DEVELOPER_CERT,
-      imageSize: 0.325,
-      awardedBy: StringConst.UDACITY,
-    ),
-    CertificationData(
-      title: StringConst.DATA_SCIENCE,
-      url: StringConst.DATA_SCIENCE_CERT_URL,
-      image: ImagePath.DATA_SCIENCE_CERT,
-      imageSize: 0.325,
-      awardedBy: StringConst.UDACITY,
-    ),
-    CertificationData(
-      title: StringConst.ANDROID_BASICS,
-      url: StringConst.ANDROID_BASICS_CERT_URL,
-      image: ImagePath.ANDROID_BASICS_CERT,
-      imageSize: 0.325,
-      awardedBy: StringConst.UDACITY,
-    ),
-  ];
+  static List<CertificationData> certificationData = [];
 
   static List<ExperienceData> experienceData = [
     ExperienceData(
